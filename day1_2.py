@@ -11,14 +11,14 @@ while True:
 
         while True:
 
-            trocou = False
+            trade = False
 
             for j in numbers_e.keys():
                 if j in line:
                     line = line.replace(j, j[0]+numbers_e[j]+j[-1])
                     trade = True
 
-            if not trocou:
+            if not trade:
                 break
 
         for i in line:
